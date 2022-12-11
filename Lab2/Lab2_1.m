@@ -30,7 +30,7 @@ function Lab2_1()
   num = 0;
   for i = 1:(N - 1)
     if num == 0
-      num = input("Enter: \n 0 - если шаг 1 \n любое другое число - если нарисовать до конца\n");
+      num = input("Enter: \n 0 - if one more step \n any other number - if you draw to the end\n");
     endif
     S_i = [a(i), b(i), c(i), d(i)];
     y_t = polyval(S_i, x_t);
@@ -47,7 +47,7 @@ function Lab2_1()
   endfor
   
   plot(x_max, y_max, "-m");
-  legend("sin(x)", "Равностоящие точки", "Кусочек сплайна", "Сплайн");
+  legend("sin(x)", "Equidistant points", "Piece of spline", "Spline");
   x_max
   dev_max
   pr = X(2) - X(1)

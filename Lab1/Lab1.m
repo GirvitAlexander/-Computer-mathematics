@@ -13,13 +13,13 @@ function Lab1()
   hold on;
   grid on;
   plot(X, Y, "o;X;r");
-  legend("Лагранж", "Точки");
+  legend("Lagrange", "Points");
   pause(1);
   
   y_t = polyval(L_2, x_t);
   plot(x_t, y_t, "-;f(x);b");
   
-  legend("Лагранж", "Точки", "Ньютон");
+  legend("Lagrange", "Points", "Newton");
   hold off;
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   pause(1);
@@ -27,7 +27,7 @@ function Lab1()
   L_3 = chebyshev(length(X));
   x_t = -1.1 : 0.01 : 1.1;
   y_t = polyval(L_3, x_t);
-  plot(x_t, y_t, "-;Чебышев;g");
+  plot(x_t, y_t, "-;Chebyshev;g");
   grid on;  
   
   pause(20);
@@ -82,7 +82,7 @@ function Lab1()
   endfor
   
   plot(x_max, y_max, 'm');
-  legend("Лагранж по Чебышеву", "Узлы Чебышева", "sin", "Max отклонение Лагранжа", "Ньютон", "Равностоящие", "Max отклонение Чебышев");
+  legend("Lagrange according to Chebyshev", "Chebyshev knots", "sin", "Max deviation Lagrange", "Newton", "Equidistant", "Max deviation Chebyshev");
   
   hold off;
   pause(3);
@@ -106,7 +106,7 @@ function Lab1()
   %endfor
   %
   %dev_x = 6:17;
-  %plot(dev_x, dev, "-;Максимальное отклонение;g");
+  %plot(dev_x, dev, "-;Max deviation;g");
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 endfunction
 

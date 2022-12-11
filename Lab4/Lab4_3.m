@@ -27,7 +27,7 @@ function Lab4_3()
   
   x = 2:N;
   subplot(2, 1, 1);
-  plot(x, dev, ";динамика отклонений;");
+  plot(x, dev, ";deviation dynamics;");
   alpha
   grid on;
   subplot(2, 1, 2);

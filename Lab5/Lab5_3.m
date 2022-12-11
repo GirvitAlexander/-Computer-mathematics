@@ -10,7 +10,7 @@ function Lab5_3()
   grid on;
   for l = 1: 15
     legend("sin");
-    n = input("Enter: \n 0 - если показать селедующий шаг 1 \n остальные клавиши - выйти\n");
+    n = input("Enter: \n 0 - if one more step \n any other number - exit\n");
     if n != 0
       break;
     endif

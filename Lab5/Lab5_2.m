@@ -25,17 +25,17 @@ function Lab5_2()
     h_print(i) = h;
   endfor
   
-  plot(h_print, int_left_rect, ";Левые прямоугольники;");
+  plot(h_print, int_left_rect, ";Left rectangles;");
   hold on;
   grid on;
-  plot(h_draw, int_rich, ";Левые прямоугольники уточнение по Ричардсону;");
+  plot(h_draw, int_rich, ";Left rectangles refinement according to Richardson;");
   
   hold off;
   figure(2);
-  plot(h_print, m, ";Левые прямоугольники;");
+  plot(h_print, m, ";Left rectangles;");
   hold on;
   grid on;
-  plot(h_draw, beta, ";Левые прямоугольники уточнение по Ричардсону;");
+  plot(h_draw, beta, ";Left rectangles refinement according to Richardson;");
   hold off;
   c
 endfunction

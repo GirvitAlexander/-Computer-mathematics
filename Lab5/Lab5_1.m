@@ -42,22 +42,22 @@ function Lab5_1()
     h_print(i) = h;
   endfor
   
-  plot(h_print, abs(int - int_left_rect), ";Левые прямоугольники;");
+  plot(h_print, abs(int - int_left_rect), ";Left rectangles;");
   hold on;
   grid on;
-  plot(h_print, abs(int - int_right_rect), ";Правые прямоугольники;");
-  plot(h_print, abs(int - int_medium_rect), ";Средние прямоугольники;");
-  plot(h_print, abs(int - int_trapezoid), ";Трапеции;");
-  plot(h_print, abs(int - int_simpson), ";Параболы;");
+  plot(h_print, abs(int - int_right_rect), ";Right rectangles;");
+  plot(h_print, abs(int - int_medium_rect), ";Average rectangles;");
+  plot(h_print, abs(int - int_trapezoid), ";Trapezoid;");
+  plot(h_print, abs(int - int_simpson), ";Parabolas;");
   hold off;
   
   figure(2);
-  plot(h_print, alpha_1, ";Левые прямоугольники;");
+  plot(h_print, alpha_1, ";Left rectangles;;");
   hold on;
   grid on;
-  plot(h_print, alpha_2, ";Правые прямоугольники;");
-  plot(h_print, alpha_3, ";Средние прямоугольники;");
-  plot(h_print, alpha_4, ";Трапеции;");
-  plot(h_print, alpha_5, ";Параболы;");
+  plot(h_print, alpha_2, ";Right rectangles;");
+  plot(h_print, alpha_3, ";Average rectangles;");
+  plot(h_print, alpha_4, ";Trapezoid;");
+  plot(h_print, alpha_5, ";Parabolas;");
   hold off;
 endfunction
